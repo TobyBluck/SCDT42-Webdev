@@ -1,59 +1,85 @@
-.main-content-area{text-align: center; height:150px; display: flex;
-  justify-content: center; align-items: center;}
 
-.discount-card{width:100%; background-color:red; height:150px; display: flex;
-  justify-content: center;
-  align-items: center;}
-.parties{width:100%; background-color:red; height:150px; margin-top: 30px; display: flex;
-  justify-content: center;
-  align-items: center;}
-.food{width:100%; background-color:red; height:150px; margin-top: 30px; display: flex;
-  justify-content: center;
-  align-items: center;}
+.container-fluid{padding-left:0px; padding-right:0px;}
 
-.venue-bar{width:100%; height:200px; background-color:red; margin-top:30px; display: flex;
-  justify-content: center;
-  align-items: center; flex-direction:column;}
-.venue-bar button{border-radius:25px; border:none; background-color:darkred; color:white; padding:5px 10px 5px 10px; font-size:13px; margin-top:15px;}
-
-.social-bar{width:100%; height:200px; background-color:red; margin-top:30px; display: flex;
-  justify-content: center;
-  align-items: center; flex-direction:column;}
-.social-bar button{border-radius:25px; border:none; background-color:darkred; color:white; padding:5px 10px 5px 10px; font-size:13px; margin-top:15px;}
-
-.social-facebook-icons{background-color:}
+.jumbotron{height:450px; display:flex; align-items: flex-end; color:white; background-attachment:fixed; background-repeat:no-repeat; 
+    background-position:center; background-size: cover; }
+.home-page .jumbrotron{}
+.food-page .jumbotron{background-image:url('foodBanner.jpg');}
+.livesports-page .jumbrotron{}
+.events-page .jumbrotron{}
 
 
 
-   footer{background-color:black; width:100%; height:100%;
-    color:white; padding:30px;}
+/* home */
+ .main-content-area{text-align: center; height:150px; display: flex;
+    justify-content: center; align-items: center; flex-direction: column; color:black;}
+
+  .discount-card{width:100%; background-color:#731320; height:150px; display: flex;
+    justify-content: center;
+    align-items: center; color:white;}
+  .parties{width:100%; background-color:#731320; height:150px; margin-top: 30px; display: flex;
+    justify-content: center;
+    align-items: center; color:white;}
+  .food{width:100%; background-color:#731320; height:150px; margin-top: 30px; display: flex;
+    justify-content: center;
+    align-items: center; color:white;}
+
+  .venue-bar{width:100%; height:200px; background-image:url('img/venuesBanner.jpg'); background-attachment:fixed; background-repeat:no-repeat; 
+    background-position:center; background-size: cover;  margin-top:30px; display: flex;
+    justify-content: center;
+    align-items: center; flex-direction:column;  color:white;}
+
+
+  .social-bar{width:100%; height:200px; background-image:url('img/socialBanner.jpg');  background-attachment:fixed; background-repeat:no-repeat; 
+    background-position:center; background-size: cover; margin-top:30px; display: flex;
+    justify-content: center;
+    align-items: center; flex-direction:column; color:white;}
+
+
+  .social-facebook-icons{background-color:}
+
   .footer-left{border-right:2px dashed lightgrey; height:100%; padding:20px;}
   .footer-right{ border-left:2px dashed lightgrey; height:100%; padding:20px;}
+  .instagram-icon{width:35px; height:35px;}
   .facebook-icon{width:35px; height:35px; margin-left:10px;}
+  .twitter-icon{width:35px; height:35px; margin-left:10px;}
   .linkedin-icon{width:35px; height:35px; margin-left:10px;}
 
 
+  footer{background-color:#731320; height:auto; width:100%; margin-top:30px; padding:30px; color:white;}
+}
 
-.container-fluid{padding-left:0px; padding-right:0px;}
-footer{background-color:red; height:auto; width:100%; margin-top:30px;}
+button{border-radius:25px; border:none; background-color:#4A4848 ; color:white; padding:5px 10px 5px 10px; font-size:13px; margin-top:15px;}
+
+/* events page */
+    .events-section{text-align: center; height:150px; display: flex;
+    justify-content: center; align-items: center; flex-direction:column; height:100%;}
+     .events-section h2{padding-bottom: 30px; padding-top: 30px;}
+    .events-section h3{padding-bottom: 30px; padding-top: 30px;}
+    .events-section p:nth-child(2){padding-bottom:30px;}
+
+    .location-one{background-color:#731320; margin-bottom:30px;}
+    .location-two{background-color:#731320; margin-bottom:30px;}
+    .location-three{background-color:#731320; margin-bottom:30px;}
+    .location-four{background-color:#731320;}
+
+/* live sports page */
+	.sports-on{display: flex; justify-content: center; padding-top: 30px; padding-bottom:30px;}
+
+/* food page */ 
+	  .menu-selection{display: flex; justify-content: center; background-color:#731320; padding-top: 30px; padding-bottom:30px;}
 
 
-.events-section{text-align: center; height:150px; display: flex;
-    justify-content: center; align-items: center;}
-
-.menu-selection{display: flex; justify-content: center; background-color:red; padding-top: 30px; padding-bottom:30px;}
-
-.sports-on{display: flex; justify-content: center; padding-top: 30px; padding-bottom:30px;}
-
-@media (min-width: 576px) {
+/* media queries */
+@media (min-width: 576px) { 
   .parties{margin-top:30px;}
 
 .footer-middle{padding:20px;}
  }
 
 
-@media (min-width: 768px) {
-.discount-card{margin-top:0px; height:200px;}
+@media (min-width: 768px) { 
+.discount-card{margin-top:0px; height:200px;} 
 .parties{margin-top:0px; height:200px;}
 .food{margin-top:0px; height:200px;}
 
@@ -71,14 +97,14 @@ footer{background-color:red; height:auto; width:100%; margin-top:30px;}
 
 
 @media (min-width: 992px) {
-.discount-card{margin-top:0px; height:250px;}
+.discount-card{margin-top:0px; height:250px;} 
 .parties{margin-top:0px; height:250px;}
 .food{margin-top:0px; height:250px;}
 }
 
 
 @media (min-width: 1200px) {
-.discount-card{margin-top:0px; height:300px;}
+.discount-card{margin-top:0px; height:300px;} 
 .parties{margin-top:0px; height:300px;}
 .food{margin-top:0px; height:300px;}
 }
