@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 
+
     <!--favicon from https://realfavicongenerator.net/ -->
     <!--optimised favicon, imgs for different devices with prefixed code for it this allows for the little icon in the top of the tab-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -89,15 +90,15 @@
         <!--- Nav bar end --->
     </header>
 
-    <!-- Banner -->
-    <div class="livesports-page jumbotron jumbotron-fluid">
+
+    <div class="social-page jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Fluid jumbotron</h1>
             <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
 
-    <!-- content -->
+
     <div class="container">
         <div class="main-content-area">
             <h2>content area</h2>
@@ -105,30 +106,62 @@
         </div>
     </div>
 
-    <!-- api here -->
-    <div class="container-fluid">
-        <div class="sports-on">
-            <h2>Live sports on</h2>
 
+    <div class="container">
+        <div class="events-section">
+            <h2>Social</h2>
+
+
+            <div class="container-fluid">
+                <div class="events-locations">
+
+                    <div class="social social-one">
+                        <h3>Taunton</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <a href="https://www.facebook.com/allstarstaunton/?fref=ts" target="_blank"><img src="img/facebook-icon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social social-two">
+                        <h3>Bristol</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <a href="https://www.facebook.com/allstarsbristol/?fref=ts" target="_blank"><img src="img/facebook-icon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social social-three">
+                        <h3>Weston</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <a href="https://www.facebook.com/groups/1734623133420097/" target="_blank"><img src="img/facebook-icon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social social-four">
+                        <h3>Exeter</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <a href="https://www.facebook.com/search/1660538837499242/local_search?surface=tyah" target="_blank"><img src="img/facebook-icon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social social-four">
+                        <h3>Competitions</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <a href="https://www.facebook.com/groups/1734623133420097/" target="_blank"><img src="img/facebook-icon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <!-- area for API content -->
-    <main>
-        <section id="sports">
-            <div id="APIArea" class="sportsArea">
-                <table id="APITable" style="width: 100%;">
-                    <tr>
-                        <th>Away Team</th>
-                        <th>Home Team</th>
-                        <th>Winner</th>
-                    </tr>
-                </table>
-            </div>
-        </section>
-    </main>
-
 
 
     <!--social and venue banner -->
@@ -150,39 +183,41 @@
             <div class="social-facebook-icons" id="facebook-three"></div>
             <div class="social-facebook-icons" id="facebook-four"></div>
         </div>
+    </div>
 
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="footer-left">
 
-                            <p>contact address</p>
-                            <p>contact postcode</p>
-                        </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-left">
+
+                        <p>contact address</p>
+                        <p>contact postcode</p>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="footer-middle">
-                            <p>FAQ's</p>
-                            <p>PRIVACY POLICY</p>
-                        </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-middle">
+                        <p>FAQ's</p>
+                        <p>PRIVACY POLICY</p>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="footer-right">
-                            <p>contact number</p>
-                            <p>contact email@@@@@@@</p>
-                            <img src="images/facebook.png" class="facebook-icon" alt="Facebook">
-                            <img src="images/linkedin.png" class="linkedin-icon" alt="LinkedIn">
-                        </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-right">
+                        <p>contact number</p>
+                        <p>contact email@@@@@@@</p>
+                        <img src="images/facebook.png" class="facebook-icon" alt="Facebook">
+                        <img src="images/linkedin.png" class="linkedin-icon" alt="LinkedIn">
                     </div>
                 </div>
             </div>
+        </div>
 
-        </footer>
-        <script src="app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
