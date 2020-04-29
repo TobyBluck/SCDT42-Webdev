@@ -122,16 +122,24 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 
     <div class="faq-page jumbotron jumbotron-fluid">
         <div class="container">
-            <h1>Fluid jumbotron</h1>
-            <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1>Contact Us</h1>
+            <p>All Stars Sports Bar</p>
         </div>
     </div>
 
 
     <div class="container">
         <div class="main-content-area">
-            <h2>content area</h2>
-            <P>exampletext</P>
+            <h2>Ways to get in-touch</h2>
+            <P>Telephone: WESTON 01934 419111,
+                TAUNTON 01823 334880,
+                BRISTOL 01179 294295,
+                EXETER 01392 438853</P>
+
+            <P>Email: weston@allstarssportsbars.co.uk,
+                taunton@allstarssportsbars.co.uk,
+                bristol@allstarssportsbars.co.uk,
+                exeter@allstarssportsbars.co.uk</P>
         </div>
     </div>
 
@@ -223,8 +231,8 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                     <div class="footer-right">
                         <p>contact number</p>
                         <p>contact email@@@@@@@</p>
-                        <img src="images/facebook.png" class="facebook-icon" alt="Facebook">
-                        <img src="images/linkedin.png" class="linkedin-icon" alt="LinkedIn">
+                        <img src="img/facebook.png" class="facebook-icon" alt="Facebook">
+                        <img src="img/linkedin.png" class="linkedin-icon" alt="LinkedIn">
                     </div>
                 </div>
             </div>
