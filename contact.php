@@ -7,7 +7,6 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 //if statment which checks if the vericication is successful then proceeds to do this 
     if ($verify->success) {
         $name = $_POST['nameInput']; //name of sender
-        $phone = $_POST['numberInput']; //phone number of sender
         $email = $_POST['emailInput']; //email of sender
         $subject = $_POST['subjectInput']; //subject of message
         $message = $_POST['messageInput']; //content of message
@@ -49,6 +48,8 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+        <!-- script for Recaptcha v2  -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>    <!-- provided by google -->
 
 
     <!--favicon from https://realfavicongenerator.net/ -->
@@ -119,7 +120,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
         <!--- Nav bar end --->
     </header>
 
-
+<!--full sized jumbotron without rounded corners this is due to the fluid modifier -->
     <div class="faq-page jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Contact Us</h1>
@@ -147,7 +148,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     <div class="container">
         <div class="contact-form-section">
 
-            <!--contact form -->
+            <!--contact form calling for the contact.php, post is used to put the form data into the http request -->
             <form action="contact.php" method="post">
 
                 <!--Boostrap component in which allows a stylized column that allows for a layout in which is close and compact together -->
@@ -156,13 +157,15 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                 <div class="form-group">
                     <label for="nameInput">Name</label>
                     <!--Form control is used for the input to add styles and overall sizing of the element from bootstrap -->
-                    <input type="text" id="nameInput" name="nameInput" class="form-control" placeholder="John Smith" required="true">
+                    <!-- record user input, class from bootstrap allows for validation --> 
+                    <input type="text" id="nameInput" name="nameInput" class="form-control" placeholder="John Smith" required="true"> 
                 </div>
 
                 <!-- Email -->
                 <div class="form-group">
                     <label for="emailInput">Email</label>
-                    <input type="email" id="emailInput" name="emailInput" class="form-control" placeholder="Someone@somewhere.com" required="true">
+                    <!-- placeholder is used to put text in the input box which can demonstrate an example -->
+                    <input type="email" id="emailInput" name="emailInput" class="form-control" placeholder="Someone@somewhere.com" required="true"> 
                 </div>
 
                 <!-- Subject -->
@@ -178,12 +181,12 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                     <textarea type="text" id="messageInput" name="messageInput" class="form-control" row="4" placeholder="What do you want to say?" required="true"></textarea>
                 </div>
 
-                <!-- reCaptcha -->
+                <!-- reCaptcha which has a api key and a class which is connected to a script to display the verifcation tick box-->
                 <div class="g-recaptcha" data-sitekey="6LcxoukUAAAAAOicujrCLboFwIOah3XDNESnihti"></div>
 
-                <!-- Submit -->
+                <!-- Submit, posts the data  -->
                 <input type="submit" value="Submit" name="submit" class="btn btn-primary">
-                <!--<button type="submit" value="Submit" name="submit" class=" btn btn-primary">Submit</button> -->
+     
             </form>
         </div>
     </div>
