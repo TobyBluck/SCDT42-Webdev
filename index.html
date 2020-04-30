@@ -24,11 +24,11 @@
 
     <!--favicon from https://realfavicongenerator.net/ -->
     <!--optimised favicon, imgs for different devices with prefixed code for it this allows for the little icon in the top of the tab-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -90,12 +90,12 @@
         <!--- Nav bar end --->
     </header>
 
-
+    <!--Responsive container for carosule which hold the div classes which have images applied in the css -->
     <div class="container-fluid">
         <div class="home-page-slider">
             <div class="container">
                 <h1>Welcome to All Stars Sports Bar</h1>
-                <p>No.1 for live sports and entertainment</p>
+                <p id="caraFix">No.1 for live sports and entertainment</p>
             </div>
 
             <div class="home-page-one">
@@ -113,8 +113,8 @@
     </div>
 
 
-    <!--- Trio of boxes --->
 
+<!--container holding the information  customer notice on the front of the home page -->
     <div class="container">
         <div class="main-content-area">
             <h2>Customer Notice</h2>
@@ -123,11 +123,12 @@
                 sorry for any inconvenience caused, keep safe everyone.</P>
         </div>
 
-
         <!--- Trio of boxes --->
         <div class="container">
             <div class="row">
+                <!--developing using the bootstrap columns with allocated spacing for each device -->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <!-- a tage to link it to the discount page ont the website with a custom class which is the same as the others, this has JS animation -->
                     <a href="discount.html">
                         <div class="discount-card">
                             <h3>Discount card</h3>
@@ -171,6 +172,7 @@
     <div class="container-fluid">
         <div class="venue-bar">
             <h3>Venue bar</h3>
+            <!-- button to expand the boxes to access the div classes below-->
             <button id="venue-button">Click here</button>
             <div class="venue-dropdown-content">
 
@@ -198,6 +200,7 @@
     <div class="container-fluid">
         <div class="social-bar">
             <h3>Social bar</h3>
+              <!-- button to expand the boxes to access the div classes below-->
             <button id="social-button">Click here</button>
 
             <div class="social-dropdown-content">
@@ -224,8 +227,9 @@
         </div>
     </div>
 
-
+<!--bottom of webpage  --> 
     <footer>
+        <!--spans the entire width of the container it is in--> 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
