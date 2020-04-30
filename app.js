@@ -3,7 +3,8 @@
 /* using document.ready to make sure everything is loaded on the page before running the script*/
 $(document).ready(function() {
 
-/* jquery hover fucntion*/
+/* jquery hover fucntion to add a box shadow, text and background change similtaniously 
+on hover to tell the user they have selected that specific box*/
 $(".discount-card").hover(discountOver, discountOut);
 function discountOver(){
   TweenMax.to(this, 0.5, {backgroundColor:"#8A7C7C", boxShadow:"5px 10px 10px 5px rgba(0, 0, 0, 0.5)"});
@@ -40,7 +41,9 @@ function foodOut(){
 
 
 
-/* homepage slider */
+/* homepage slider roolls through stacked divs making them disapear 
+giving the effect of a slider, autoAlpha is Gsaps version of opacity but smoother
+in transition*/
 var homePageSlider = new TimelineMax({repeat:-1, loop:true})
     .to('.home-page-one', 1, {delay:2.5, autoAlpha:0})
     .to('.home-page-two', 1, {delay:2.5, autoAlpha:0})
@@ -54,7 +57,8 @@ var homePageSlider = new TimelineMax({repeat:-1, loop:true})
 
 
 
-/* Button hover states  not using the css :hover due to consistancy of code */
+/* Button hover states  not using the css :hover due to consistancy of code for changing the button 
+background and text color on hover to tell the user that they have selected that button */
 
 $("button").hover(buttonOver, buttonOut);
 function buttonOver(){
@@ -80,7 +84,8 @@ var VenuetimeLine = new TimelineMax({paused:true, reversed: true})
 /*delay:-0.5 : the minus delay mean it will execute in the previous keyframe
 y:-125 : this moves the text and button up so it stay at the top*/
   .to('.venue-bar h3', 0.5, {delay:-0.5, y:-125})
-  .to('.venue-bar button', 0.5, {delay:-0.5, y:-125}) 
+  .to('.venue-bar button', 0.5, {delay:-0.5, y:-125})
+  .to('.venue-dropdown-content', 1, {delay:1, display:'flex'})
 
 $("#venue-button").click(function() { /* jquery click event handler that wrap the gsap */
   VenuetimeLine.reversed() ? VenuetimeLine.play() : VenuetimeLine.reverse();
@@ -93,12 +98,18 @@ var SocialtimeLine = new TimelineMax({paused:true, reversed: true})
   .to('.social-bar', 0.5, {height:450})
   .to('.social-bar h3', 0.5, {delay:-0.5, y:-125})
   .to('.social-bar button', 0.5, {delay:-0.5, y:-125})
+  .to('.social-dropdown-content', 1, {autoAlpha: 1, display:'flex'})
 
 $("#social-button").click(function() {
   SocialtimeLine.reversed() ? SocialtimeLine.play() : SocialtimeLine.reverse();
   VenuetimeLine.pause(0);
 });
 });
+
+
+
+
+
 /* Live sports API */ 
     $.ajax({
       headers: { 'X-Auth-Token': 'f6dacb4f2b9c4d6eaf82dab338cac133' },
